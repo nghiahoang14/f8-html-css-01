@@ -220,12 +220,12 @@ a {
     margin-top: 10px;
     font-weight: 600;
     font-size: 1.4rem;
-    display: inline-block;
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
     color: #0689ff;
 }
-.guides-items .arrow {
-    margin-left: 144px;
-}
+
 .guides-cta {
     display: flex;
     justify-content: center;
@@ -269,8 +269,8 @@ a {
 }
 .featured .list {
     margin-top: 70px;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 .featured .item {
@@ -488,7 +488,7 @@ a {
     display: flex;
 }
 .footer .row-top {
-    gap: 185px;
+    column-gap: 185px;
 }
 .footer .heading {
     font-weight: 700;
